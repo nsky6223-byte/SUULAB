@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUU LABS - Creative Tech Studio</title>
+    <title>SSULAB - Creative Tech Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
@@ -33,7 +33,7 @@
 
         // --- 데이터 관리 (여기만 수정하면 내용이 바뀝니다!) ---
         const PORTFOLIO_DATA = {
-            name: "SUU LABS",
+            name: "SSULAB",
             slogan: "상상을 현실로 코딩하는\n크리에이티브 스튜디오",
             description: "숭실대학교 1학년 개발자가 운영하는 1인 테크 스튜디오입니다.\n일상의 작은 불편함을 기술로 해결하고, 사람들에게 즐거움을 주는 웹 서비스를 만듭니다.",
             projects: [
@@ -43,7 +43,7 @@
                     category: "Web App / Gamification",
                     description: "꽃을 수집하고 편지와 함께 마음을 전하는 힐링 SNS 서비스입니다. 카카오 로그인과 공유 기능을 통해 바이럴 요소를 극대화했습니다.",
                     tech: ["React", "Node.js", "MongoDB", "Vercel"],
-                    image: "https://images.unsplash.com/photo-1490750967868-58cb75069ed6?auto=format&fit=crop&q=80&w=800", // 나중에 Floris 스크린샷으로 교체
+                    image: "https://image.thum.io/get/width/800/crop/600/https://floris-ebon.vercel.app/",
                     link: "https://floris-ebon.vercel.app/",
                     color: "bg-rose-50 text-rose-600"
                 },
@@ -53,7 +53,7 @@
                     category: "Archive / Interactive",
                     description: "내 손안의 작은 미술관. 전 세계 명화를 고화질로 감상하고 나만의 도슨트 설명을 들을 수 있는 아카이빙 플랫폼입니다.",
                     tech: ["React", "Public API", "Tailwind"],
-                    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=800",
+                    image: "https://image.thum.io/get/width/800/crop/600/https://pocketmuseum.netlify.app/",
                     link: "https://pocketmuseum.netlify.app/",
                     color: "bg-amber-50 text-amber-700"
                 },
@@ -63,7 +63,7 @@
                     category: "Edutech",
                     description: "매일 새로운 상식을 퀴즈로 풀어보는 학습 앱입니다. 오답 노트 기능과 친구 랭킹 시스템을 통해 학습 동기를 부여합니다.",
                     tech: ["JavaScript", "Firebase", "PWA"],
-                    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=800",
+                    image: "https://image.thum.io/get/width/800/crop/600/https://sangsik-quiz.netlify.app/",
                     link: "https://sangsik-quiz.netlify.app/",
                     color: "bg-indigo-50 text-indigo-600"
                 }
@@ -130,9 +130,9 @@
                     
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {PORTFOLIO_DATA.projects.map((project) => (
-                            <div key={project.id} className="group bg-slate-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-100">
+                            <div key={project.id} className="group bg-white rounded-3xl overflow-hidden hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.15)] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] border border-slate-100">
                                 <div className="h-64 overflow-hidden relative">
-                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
                                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                         <a href={project.link} target="_blank" className="bg-white/20 backdrop-blur text-white border border-white/50 px-6 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-white hover:text-black transition-all">
                                             사이트 방문 <ExternalLink size={16} />
@@ -225,7 +225,7 @@
                             <ul className="space-y-3">
                                 <li>Seoul, Korea</li>
                                 <li>skchu0216@gmail.com</li>
-                                <li>© 2026 SUU LABS</li>
+                                <li>© 2026 SSULAB</li>
                             </ul>
                         </div>
                     </div>
